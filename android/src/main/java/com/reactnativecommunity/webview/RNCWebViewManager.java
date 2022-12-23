@@ -739,7 +739,7 @@ public class RNCWebViewManager extends SimpleViewManager<WebView> {
         root.goForward();
         break;
       case "reload":
-        root.loadUrl( "javascript:window.location.reload( true )" );
+        root.loadUrl(root.getUrl());
         break;
       case "stopLoading":
         root.stopLoading();
